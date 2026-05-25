@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Detecção de Objetos</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Detecção Inteligente com IA</h1>
+
+    <p class="subtitle">
+      Sistema usando Teachable Machine + TensorFlow.js
+    </p>
+
+    <button id="start-btn">
+      Iniciar Câmera
+    </button>
+
+    <div id="status">
+      Aguardando inicialização...
+    </div>
+
+    <div id="webcam-container"></div>
+
+    <div id="result-box">
+      Nenhum objeto detectado
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
